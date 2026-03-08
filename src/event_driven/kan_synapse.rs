@@ -42,8 +42,8 @@ impl<B: Backend> EventDrivenKANSynapse<B> {
     pub fn forward(
         &self,
         trace: Tensor<B, 2>,
-        last_trace: Option<Tensor<B, 2>>,
-        last_output: Option<Tensor<B, 2>>,
+        _last_trace: Option<Tensor<B, 2>>,
+        _last_output: Option<Tensor<B, 2>>,
     ) -> (Tensor<B, 2>, Tensor<B, 2>, Tensor<B, 2>) {
         let out = self.kan.forward(trace.clone());
         (out.clone(), trace, out)

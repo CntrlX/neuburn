@@ -12,8 +12,8 @@ pub fn latency_encode<B: Backend>(
     device: &B::Device,
 ) -> Tensor<B, 3> {
     let shape = data.dims();
-    let batch = shape[0];
-    let features = shape[1];
+    let _batch = shape[0];
+    let _features = shape[1];
     let one = Tensor::ones(shape, device);
     let max_step = (num_steps - 1) as f32;
     let step_float = (one - data).mul_scalar(max_step);
