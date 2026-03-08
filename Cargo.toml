@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 description = "Spiking neural network framework on top of Burn — Rust-native alternative to snntorch"
 license = "MIT OR Apache-2.0"
-repository = ""
+repository = "https://github.com/cntrlx/neuburn"
+documentation = "https://docs.rs/neuburn"
+homepage = "https://github.com/cntrlx/neuburn"
+readme = "README.md"
+keywords = ["spiking", "snn", "neuromorphic", "burn", "deep-learning"]
+categories = ["science", "algorithms"]
 
 [dependencies]
 burn = { version = "0.14", features = ["train", "vision"] }
