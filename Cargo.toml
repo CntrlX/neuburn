@@ -1,0 +1,17 @@
+[package]
+name = "neuburn"
+version = "0.1.0"
+edition = "2021"
+description = "Spiking neural network framework on top of Burn — Rust-native alternative to snntorch"
+license = "MIT OR Apache-2.0"
+repository = ""
+
+[dependencies]
+burn = { version = "0.14", features = ["train", "vision"] }
+
+[dev-dependencies]
+burn-ndarray = "0.14"
+
+[[example]]
+name = "mnist_snn"
+path = "examples/mnist_snn.rs"
